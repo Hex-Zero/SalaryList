@@ -15,7 +15,24 @@ header {
   position: relative;
   height: 20px;
   background-color: var(--main-colour);
-  text-align: end;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div {
+  color: white;
+}
+
+header > a {
+  color: aliceblue;
+  padding-left: 80px;
+  padding-bottom: 3px;
+  font-size: 12px;
+}
+
+header > a:hover {
+  color: goldenrod;
 }
 
 footer {
