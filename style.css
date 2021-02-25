@@ -220,3 +220,41 @@ section {
 .max-cross-out-item {
   text-decoration: line-through;
 }
+
+.input-container-max {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container-max > :nth-child(3) {
+  margin-top: 15px;
+}
+
+#staticVariableFrom {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  width: 270px;
+  position: absolute;
+  right: 10px;
+  top: 22px;
+}
+
+.static-input-container {
+  position: relative;
+}
+
+.static-input-container > label {
+  position: absolute;
+  top: -15px;
+  font-size: 12px;
+}
+
+.static-input-container > input {
+  background-color: rgb(0, 47, 88);
+  color: white;
+  border: none;
+  max-width: 70px;
+  padding: 2px 6px;
+}

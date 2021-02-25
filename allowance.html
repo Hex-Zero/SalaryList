@@ -30,34 +30,48 @@
         type="button"
         class="add-new-user-modal-max"
         data-toggle="modal"
-        data-target="#exampleModal"
+        data-target="#createNewUserModal"
       >
         + New User
       </div>
       <a href="./index.html">Salary</a>
       <div>ALLOWANCES</div>
       <div>
-        <label for="" class="max-total-label">Total: </label>
+        <label for="" class="max-total-label"></label>
         <input disabled type="text" class="max-total-input" />
       </div>
     </header>
-    <section>allfdsjafk</section>
+    <section>
+      <form id="staticVariableFrom">
+        <div class="static-input-container">
+          <label for="allowancePeriodField">Period</label>
+          <input id="allowancePeriodField" type="number" min="0" value="7" />
+        </div>
+        <div class="static-input-container">
+          <label for="allowaceAmountField">Amount</label>
+          <input id="allowaceAmountField" type="number" min="0" value="10" />
+        </div>
+        <div class="static-input-container">
+          <label for="allowaceIntrestField">Intrest</label>
+          <input id="allowaceIntrestField" type="number" min="0" value="0" />
+          <button type="submit">+</button>
+        </div>
+      </form>
+    </section>
     <footer></footer>
   </body>
-
-  <!-- Modal -->
   <div
     class="modal fade"
-    id="exampleModal"
+    id="createNewUserModal"
     tabindex="-1"
     role="dialog"
-    aria-labelledby="exampleModalLabel"
+    aria-labelledby="createNewUserModalLabel"
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
-      <form class="modal-content">
+      <form id="newUserForm" class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="createNewUserModalLabel">Add New User</h5>
           <button
             type="button"
             class="close"
@@ -67,11 +81,14 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">...</div>
+        <div class="input-container-max">
+          <label for="newUserName">User Name</label>
+          <input id="newUserName" type="text" required />
+          <label for="newUserAllowance">Allowance</label>
+          <input id="newUserAllowance" type="number" required />
+        </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary" data-dismiss="modal">
-            + ADD
-          </button>
+          <input type="submit" class="btn btn-primary" value="+ Add" />
         </div>
       </form>
     </div>

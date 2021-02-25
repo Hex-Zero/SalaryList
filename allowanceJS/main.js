@@ -1,14 +1,15 @@
 const userList = getUsers()?.length > 0 ? getUsers() : [];
 const static = getStatic()?.length > 0 ? getStatic() : [];
+const $createNewUserModal = $("#createNewUserModal");
 
-function createUser(name, allowanceTotal = 0) {
+$("#newUserForm").submit(function () {
   userList.push({
-    name,
-    allowanceTotal,
+    name: $(this)[0][1].value,
+    allowanceTotal: $(this)[0][2].value,
   });
-}
-
-$("#createNewUserModal").show();
+  updateUsers(userList);
+  return false;
+});
 
 console.log(userList);
 console.log(static);
