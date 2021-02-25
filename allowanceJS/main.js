@@ -11,6 +11,19 @@ $("#allowancePeriodField").val(static.period);
 $("#allowaceAmountField").val(static.amount);
 $("#allowaceIntrestField").val(static.intrest);
 
+function renderUsers() {
+  userList.forEach((user, index) => {
+    const $userContainer = $(
+      ".user-container-template > .user-container"
+    ).clone();
+
+    $userContainer.find(".user-name-input").val(user.name);
+    $userContainer.find(".user-allowance-input").val(user.allowanceTotal);
+
+    $("#mainSectionContainer").append($userContainer);
+  });
+}
+
 $("#staticVariableForm").submit(function (event) {
   updateStatic({
     period: $(this)[0][0].value,
@@ -27,6 +40,8 @@ $("#newUserForm").submit(function () {
   updateUsers(userList);
   return false;
 });
+
+renderUsers();
 
 console.log(userList);
 console.log(static);
