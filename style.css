@@ -3,6 +3,10 @@
   --background-colour: rgb(181, 255, 255);
 }
 
+body {
+  padding: 0 !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,10 +98,17 @@ section {
   margin-top: 30px;
 }
 
-.max-task-list-input {
+.add-new-user-modal-max {
+  position: absolute;
+  cursor: pointer;
+  background-color: hsl(147deg 100% 41%);
+  left: 10px;
+  top: 30px;
+  padding: 4px 12px;
 }
 
-.max-salary-input {
+.add-new-user-modal-max:hover {
+  background-color: green;
 }
 
 .max-job-list-container {

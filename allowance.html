@@ -26,6 +26,14 @@
           class="max-clear-user-icon"
         />
       </button>
+      <div
+        type="button"
+        class="add-new-user-modal-max"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        + New User
+      </div>
       <a href="./index.html">Salary</a>
       <div>ALLOWANCES</div>
       <div>
@@ -36,6 +44,38 @@
     <section>allfdsjafk</section>
     <footer></footer>
   </body>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" data-dismiss="modal">
+            + ADD
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -55,5 +95,6 @@
     src = "https://kit.fontawesome.com/1e406219c3.js";
     crossorigin = "anonymous";
   </script>
+  <script src="./allowanceJS/localStorage.js"></script>
   <script src="./allowanceJS/main.js"></script>
 </html>
