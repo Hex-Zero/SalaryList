@@ -13,3 +13,11 @@ function getStatic() {
 function updateStatic(variables) {
   localStorage.setItem("StaticVars", JSON.stringify(variables));
 }
+
+function getTime() {
+  return JSON.parse(localStorage.getItem("Time"));
+}
+
+function updateTime(variables) {
+  localStorage.setItem("Time", JSON.stringify(variables));
+}

@@ -34,12 +34,10 @@
       >
         + New User
       </div>
+
       <a href="./index.html">Salary</a>
       <div>ALLOWANCES</div>
-      <div>
-        <label for="" class="max-total-label"></label>
-        <input disabled type="text" class="max-total-input" />
-      </div>
+      <div data-toggle="modal" data-target="#setStartDateModal">Start</div>
     </header>
     <section id="mainSectionContainer">
       <form id="staticVariableForm">
@@ -103,6 +101,39 @@
       </form>
     </div>
   </div>
+  <div
+    class="modal fade"
+    id="setStartDateModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="setStartDateModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <form id="setStartDateForm" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="setStartDateModalLabel">
+            When Would You Like To Start?
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <input type="date" name="startDate" id="setStartDate" />
+
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary" value="Start" />
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

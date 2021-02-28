@@ -4,6 +4,10 @@ const static = getStatic() || {
   amount: 10,
   intrest: 0,
 };
+const timer = getTime() || {
+  startTime: new Date(),
+  nextPayTime: null,
+};
 
 const $createNewUserModal = $("#createNewUserModal");
 
@@ -38,10 +42,9 @@ $("#newUserForm").submit(function () {
     allowanceTotal: $(this)[0][2].value,
   });
   updateUsers(userList);
-  return false;
 });
 
 renderUsers();
 
-console.log(userList);
+console.log(timer);
 console.log(static);
