@@ -284,6 +284,7 @@ section {
   height: 40px;
   text-align: right;
 }
+
 .user-input-container > input[type="submit"] {
   background-color: rgb(64, 0, 107);
   width: 60px;
@@ -293,5 +294,5 @@ section {
 }
 
 .user-input-container > input[type="submit"]:hover {
-  background-color: green;
+  background-color: rgb(1 213 96);
 }
