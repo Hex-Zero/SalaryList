@@ -267,7 +267,31 @@ section {
 }
 
 .user-name-input {
+  height: 40px;
+  padding-left: 15px;
+  margin-right: 20px;
 }
 
-.submit {
+.user-allowance-input {
+  width: 100px;
+  height: 40px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.math-operation-input {
+  width: 100px;
+  height: 40px;
+  text-align: right;
+}
+.user-input-container > input[type="submit"] {
+  background-color: rgb(64, 0, 107);
+  width: 60px;
+  height: 40px;
+  color: white;
+  margin-left: 40px;
+}
+
+.user-input-container > input[type="submit"]:hover {
+  background-color: green;
 }
