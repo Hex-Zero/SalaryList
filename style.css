@@ -251,8 +251,8 @@ section {
 }
 
 .static-input-container > input {
-  background-color: rgb(0, 47, 88);
-  color: rgb(255, 255, 255);
+  background-color: #002f58;
+  color: #fff;
   border: none;
   max-width: 70px;
   padding: 2px 6px;
@@ -289,15 +289,15 @@ section {
 }
 
 .user-input-container > input[type="submit"] {
-  background-color: rgb(64, 0, 107);
+  background-color: #40006b;
   width: 60px;
   height: 40px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin-left: 40px;
 }
 
 .user-input-container > input[type="submit"]:hover {
-  background-color: rgb(1 213 96);
+  background-color: #00d15e;
 }
 
 .backgroung-image {
@@ -308,5 +308,6 @@ section {
   position: absolute;
   height: 1120px;
   width: 2114px;
-  opacity: 0.2;
+  opacity: 0.05;
+  z-index: -100;
 }
