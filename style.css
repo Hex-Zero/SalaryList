@@ -50,7 +50,12 @@ section {
   min-height: calc(100vh - 40px);
   display: flex;
   background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+.max-allowance-section {
   flex-direction: column;
+  justify-content: start;
 }
 
 .max-all-elements {
@@ -164,9 +169,6 @@ section {
 .max-input-container > .max-warning-message {
   position: absolute;
   bottom: 0;
-}
-
-.max-check-box {
 }
 
 .max-shopping-list {
