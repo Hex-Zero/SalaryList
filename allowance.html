@@ -57,14 +57,16 @@
       </form>
     </section>
     <div class="user-container-template d-none">
-      <div class="user-container">
+      <form class="user-container max-user-form">
         <div class="user-input-container">
           <input class="user-name-input" type="text" />
           <input class="user-allowance-input" type="number" />
           <input class="math-operation-input" type="number" />
+          <input type="button" value="+" data-operation="true" />
+          <input type="button" value="-" data-operation="false" />
           <input type="submit" value="Edit" />
         </div>
-      </div>
+      </form>
     </div>
     <footer></footer>
   </body>
