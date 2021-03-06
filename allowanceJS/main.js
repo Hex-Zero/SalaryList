@@ -44,6 +44,12 @@ $("#newUserForm").submit(function () {
   updateUsers(userList);
 });
 
+$(".max-user-form").submit(function (event) {
+  console.log(event);
+  event.preventDefault();
+  return false;
+});
+
 renderUsers();
 
 console.log(timer);
